@@ -1,0 +1,41 @@
+Basic Linux Commands
+1.	pwd - Print the current working directory.
+$ pwd
+/home/user/Documents
+2.	ls - List files and directories in the current directory.
+$ ls
+file1.txt  file2.txt  folder1  folder2
+3.	cd - Change the current working directory.
+$ cd folder1
+$ pwd
+/home/user/Documents/folder1
+4.	mkdir - Create a new directory.
+$ mkdir new_folder
+$ ls
+file1.txt  file2.txt  folder1  folder2  new_folder
+5.	cp - Copy files or directories.
+$ cp file1.txt new_folder/
+$ ls new_folder
+file1.txt
+________________________________________
+Advanced Linux Commands
+1.	find - Search for files and directories.
+$ find /home/user/Documents -name "*.txt"
+/home/user/Documents/file1.txt
+/home/user/Documents/file2.txt
+2.	grep - Search for a pattern within files.
+$ grep "pattern" file1.txt
+This is the matching pattern.
+3.	chmod - Change file permissions.
+$ chmod 755 script.sh
+$ ls -l script.sh
+-rwxr-xr-x 1 user user 4096 Nov 19 12:00 script.sh
+4.	tar - Archive files and directories.
+$ tar -cvf archive.tar folder1/
+folder1/
+folder1/file1.txt
+5.	ps - Display information about active processes.
+$ ps
+  PID TTY          TIME CMD
+ 1234 pts/0    00:00:00 bash
+ 1235 pts/0    00:00:00 ps

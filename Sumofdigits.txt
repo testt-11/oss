@@ -1,0 +1,30 @@
+// sum of digits
+
+
+#!/bin/bash
+
+# Prompt the user to enter a number
+echo "Enter a number:"
+read number
+
+# Initialize sum to 0
+sum=0
+
+# Use a while loop to extract digits and calculate their sum
+temp=$number
+while ((temp > 0 )); do
+    digit=$((temp % 10))    # Extract the last digit
+    sum=$((sum + digit))    # Add the digit to the sum
+    temp=$((temp / 10))     # Remove the last digit
+done
+
+# Display the result
+echo "The sum of the digits of $number is: $sum"
+
+
+Execution:
+Input:
+Enter a number:
+1234
+Output:
+The sum of the digits of 1234 is: 10
